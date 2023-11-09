@@ -1,0 +1,134 @@
+.tab-content .tab-pane {
+  display: none;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  background-color: #293949;
+  padding: 1em;
+  color: #BE9857;
+}
+.tab-content .tab-pane:first-child {
+  display: block;
+}
+.tab-list li {
+  display: inline-block;
+  background-color: #293949;
+  border-radius: 0.3em;
+}
+.tab-list li a {
+  text-decoration: none;
+  color: #BE9857;
+  padding: 1em;
+}
+@media screen and (max-width: 767px) {
+  .tab-list li {
+    display: inline-block;
+  }}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  background-color: #BE9857;
+  color: azure;
+}
+.descargar{
+  list-style: none;
+}
+a{
+  color: azure;
+}
+header{
+  margin-top: 1em;
+  text-align: center;
+  border: solid #1d2a36;
+  background-color: #293949;
+  width: 100%;
+}
+img{
+  width: 100px;
+  height: 100px;
+}
+header img{
+border-radius: 35%;
+}
+button{
+  color: cadetblue;
+  background-color: #293949;
+  border-radius: 0.5em;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+#qr-file{
+  color: cadetblue;
+  background-color: #293949;
+  border-radius: 0.5em;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.usuario{
+  padding-left: 2em;
+  padding-top: 2em;
+  border: solid #1d2a36;
+  background-color: #293949;
+  max-width: 320px;
+  max-height: 480px;
+}
+.usuario p{
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+.container{
+  display: grid;
+  grid-template-columns: 1fr 1.7fr;
+  align-content: center;
+  margin: 1.5em 12em;
+}
+.container-qr div{
+  display: grid;
+  grid-template-columns: 1fr 2.8fr;
+  align-content: center;
+  border: solid #1d2a36;
+  background-color: #293949;
+  max-width: 820px;
+}
+.img-qr{
+  padding-left: 2.5em;
+  padding-bottom: 0.5em;
+}footer{
+  margin-top: 5em;
+  text-align: center;
+  color: #293949;
+}
+.boton{
+  text-align: center;
+}
+.decoracion img{
+  margin-top: 1em;
+  margin-left: 0.4em;
+}
+/* .subir-archivo{
+  position: relative;
+  display: inline-block;
+}
+.subir-archivo::before{
+  background-color:#BE9857;
+  color: #293949;
+  border: solid 1px white;
+  border-radius: 1em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 3px;
+  content: 'Seleccionar archivo';
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+.subir-archivo input[type="file"]{
+  opacity: 0;
+  width: 150px;
+  height: 20px;
+  display: inline-block;
+} */

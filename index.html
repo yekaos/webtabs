@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Component-Tab</title>
+</head>
+<body>
+  <header>
+    <div class="img-logo">
+      <img src="logo1.png" alt="Logo">
+    </div>
+  </header>
+  <div class="container">
+    <div class="usuario">
+      <p>Foto de Usuario</p>
+      <div class="user-img">
+      <img src="usuario.png" alt="Foto de Usuario">
+      </div>
+      <p>Usuario: yekaos</p>
+      <button type="button">Editar Foto de Perfil</button>
+      <br>
+      <button type="button">Vista General de la Página</button>
+      <br>
+      <button type="button">Ajustes</button>
+      <p>Patrimono Nacional &copy;</p>
+    </div>
+  <div class="tab-component">
+      <ul class="tab-list">
+          <li><a href="#" class="tab-link">Info QR</a></li>
+          <li><a href="#" class="tab-link">URL</a></li>
+          <li><a href="#" class="tab-link">Tamaño</a></li>
+          <li><a href="#" class="tab-link">Geolocalización</a></li>
+          <li><a href="#" class="tab-link">Email</a></li>
+          <li><a href="#" class="tab-link">MP3/MP4</a></li>
+          <li><a href="#" class="tab-link">WIFI</a></li>
+      </ul>
+      <div class="tab-content">
+          <div class="tab-pane">
+            <div class="creacion">
+              <div class="decoracion">
+                <h2>Selecciona un diseño para tu QR</h2> 
+                
+                Elige color <input type="color">
+                <br>
+                Elige forma
+                <input type="radio" name="transporte" value="1"><img src="14414920.jpg" width="50px">
+                <input type="radio" name="transporte" value="2"><img src="2819686.png" width="50px">
+                
+                <input type="radio" name="transporte" value="3"><img src="3144541.png" width="50px">
+                <br>
+              </div>
+              <br>
+            <form id="qr-form">
+              <br>
+              <label for="qr-data">Texto:</label>
+              <br>
+              <input type="text" id="qr-data" name="qr-data">
+          </form>
+          </div>
+        </div>
+        <div class="tab-pane">
+          <div class="URL">
+          <form id="qr-edit-form">
+            <label for="qr-data">URL:</label>
+            <br>
+            <input type="url" id="qr-data" name="qr-data">
+        </form>
+        </div>
+      </div>
+          <div class="tab-pane">
+            <div class="edicion">
+            <form id="qr-edit-form">
+              <label for="qrSize">Tamaño del QR:</label>
+              <br>
+              <input type="range" id="qrSize" min="100" max="500" step="10" value="200">
+          </form>
+          </div>
+        </div>
+          <div class="tab-pane">
+            <div class="eliminacion">
+            <form id="qr-edit-form">
+              <label for="qr-data">Geolocalización (Latitud/Longuitud):</label>
+              <br>
+              <input type="number" id="qr-data" name="qr-data">
+          </form>
+          </div>
+        </div>
+          <div class="tab-pane">
+            <div class="email">
+              <label for="qr-data">Email (En caso de querer enviar un mail de forma automática):</label>
+              <br>
+              <input type="text" id="qr-data" name="qr-data">
+              <br>
+              <label for="qr-data">Asunto del Mail</label>
+              <br>
+              <input type="text" id="qr-data" name="qr-data">
+              <br>
+              <label for="qr-data">Texto del Mail</label>
+              <br>
+              <input type="text" id="qr-data" name="qr-data">
+          </div>
+        </div>
+      <div class="tab-pane">
+        <div class="MP3/MP4">
+          <label for="qr-data">Añade un archivo MP3 al QR:</label>
+          <div class="subir-archivo">
+          <input type="file" id="qr-file" name="qr-file" accept="audio/*">
+          </div>
+          <br>
+          <label for="qr-data">Añade un archivo MP4 al QR</label>
+          <div class="subir-archivo">
+          <input type="file" id="qr-file" name="qr-file" accept="video/*">
+        </div>
+    </div>
+  </div>
+  <div class="tab-pane">
+    <div class="WIFI">
+      <label for="qr-data">Nombre de la Red:</label>
+      <br>
+      <input type="text" id="qr-data" name="qr-data">
+      <br>
+      <label for="qr-data">Contraseña de la Red:</label>
+      <br>
+      <input type="password" id="qr-data" name="qr-data">
+  </div>
+</div>
+</div>
+<div class="boton">
+<button type="button" id="generate-qr">Generar QR</button>
+</div>
+  <script src="script.js"></script>
+  <footer><p>Kyllian Arribas Garcia, 2023&copy;</p></footer>
+</body>
+</html>
